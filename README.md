@@ -5,4 +5,7 @@
 
 ### Author: Gryffindor: Andrea, Anthony, George, Roop, and Zach
 
-- [Domain Model](/Users/meadg/projects/courses/code_201/House_of_Hell/DOM.png)
+- [Domain Model](DOM.png)
+- [About Me Wireframe](About_me_wireframe.png)
+- [Game Wireframe](game_wireframe.png)
+- [Main Wireframe](WIREFRAME_1.png)
