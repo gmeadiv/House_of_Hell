@@ -15,7 +15,7 @@
 - If the user defeats these killers and their dastardly plans, they will be able to taste fresh air and freedom once again.
 
 ## The House of Hell will not:
-- The House of Hell will never turn into one of those janky facebook that annoys everyone with notifications
+- The House of Hell will never turn into one of those janky facebook games that annoys everyone with notifications
 - The House of Hell will never end world hunger because it feeds off the desperation of the poor.
 
 # What is our MVP functionality?
