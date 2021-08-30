@@ -23,7 +23,7 @@
 - Excellent graphics and design which fully immerse the user in our House of Hell
 
 # What are our stretch goals?
-- Each page should resemble a page in a comic book complete with turning effects
+- Each page should resemble a page in a comic book complete with animated turning effects
 - Five functional games/puzzles
 - Add in a jump scare
 - Sound effects
@@ -35,7 +35,7 @@
 - The user will wake up in the House of Hell confused where they'll be greeted by the butler/maid whom will introduce them to the page and what is required of them
 - The butler/maid will lead the user through different rooms and floors in the house
 - on each room/floor, the user will meet a serial killer whom presents them with a task/game that must be completed/won before the user moves on
-- If the user fails, the serial killer will remove a limb from the user's 
+- If the user fails, the serial killer will remove a limb from the user's body
 - Failure occurs if the user loses more than three limbs, the user will have an option to end the game or try again
 - Success occurs if the user completes all games/tasks before losing three limbs
 - The about me page will appear at the end regardless of success or failure
