@@ -11,6 +11,7 @@ body {
 }
 
 #hell_house {
+  display: flex;
   background-image: url("hellHouse.png");
   background-color: #cccccc;
   width: 100vw;
@@ -18,12 +19,14 @@ body {
 }
 
 #menu {
+  display: flex;
   font-family: 'Maven Pro', sans-serif;
   background-color: grey;
   text-align: center;
 }
 
 #title {
+  display: flex;
   font-family: 'Nosifer', cursive;
   color: darkred;
 }
