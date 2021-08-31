@@ -1,5 +1,5 @@
-/* html { 
-  background: url(hellHouse.png) no-repeat center center fixed; 
+/* #hell_house { 
+  background: url(images/hellHouse.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -12,26 +12,24 @@ body {
 }
 
 #hell_house {
-  display: ;
   width: 100%;
   z-index: -1;
   position: absolute;
 }
 
 #menu {
-  display: ;
   position: absolute;
   top: 20px;
   right: 140px;
-  opacity: 0.3;
+  opacity: 0.7;
   border-radius: 5px;
+  font-size: large;
   font-family: 'Maven Pro', sans-serif;
   background-color: grey;
   text-align: center;
 }
 
 #title {
-  display: ;
   font-family: 'Nosifer', cursive;
   color: darkred;
   position: absolute;
