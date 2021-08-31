@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+        <link rel="stylesheet" href="./jsStyle.css">
+  </head>
+    <body>
+      <header>
+        <div>
+          <p>Lives 
+            <span id="firstHeart">&hearts;</span>
+            <span id="secondHeart">&hearts;</span>
+            <span id="thirdHeart">&hearts;</span>
+            <span id="fourthHeart">&hearts;</span>
+            <span id="fifthHeart">&hearts;</span>
+          </p>
+        </div>
+      </header>
+      <main>
+        <form>
+          <label for="riddle1">The person who built it sold it. The person who bought it never used it. The person who used it never saw it. What is it?</label><br>
+          <input type="text" id="answer1"><br>
+          <label for="riddle2">What room do ghosts avoid?</label><br>
+          <input type="text" id="answer2"><br>
+          <label for="riddle3">I don't have eyes, but once I did see. Once I had thoughts, but now I'm white and empty.</label><br>
+          <input type="text" id="answer3"><br>
+          <input type="submit" value="Submit">
+        </form>
+        <form action="victory.html"></form>
+          <button type="submit" id="victory" class="hidden">You win!</button>
+        </form>
+      </main>
+      <script src="./js/app.js"></script>
+      <script src="./js/riddle.js"></script>
+    </body>
+</html>
