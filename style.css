@@ -1,0 +1,40 @@
+/* html { 
+  background: url(hellHouse.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
+
+body {
+  display: grid;
+  position: relative;
+}
+
+#hell_house {
+  display: ;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+#menu {
+  display: ;
+  position: absolute;
+  top: 20px;
+  right: 140px;
+  opacity: 0.3;
+  border-radius: 5px;
+  font-family: 'Maven Pro', sans-serif;
+  background-color: grey;
+  text-align: center;
+}
+
+#title {
+  display: ;
+  font-family: 'Nosifer', cursive;
+  color: darkred;
+  position: absolute;
+  top: 250px;
+  left: 200px;
+}
