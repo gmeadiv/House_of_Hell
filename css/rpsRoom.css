@@ -46,7 +46,7 @@ html, body {
 }
 
 .speech {
-  background-color:#fff;
+  background-color:rgba(179, 139, 7, 0.849);
   border:solid 2px #000;
   border-radius:12px;
   display:inline-block;
@@ -71,8 +71,8 @@ html, body {
 
 .speech:after {
   border:solid 10px transparent;
-  border-left:solid 10px #fff;
-  border-top:solid 10px #fff;
+  border-left:solid 10px rgba(179, 139, 7, 0.849);
+  border-top:solid 10px rgba(179, 139, 7, 0.849);
   bottom:-19px;
   content:"";
   height:0;
