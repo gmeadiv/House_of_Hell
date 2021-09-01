@@ -1,12 +1,12 @@
 'use strict'
 
 function riddle1(){
-
-  const answer = prompt('The person who built it sold it. The person who bought it never used it. The person who used it never saw it. What is it?');
-  let answerLowercase = answer.toLowerCase();
-  if(answerLowercase.search("coffin") === -1){
+  const answer1 = document.getElementById('answer1');
+  let answer1Lowercase = answer1.toLowerCase();
+  if(answer1Lowercase.search("coffin") === -1){
     alert('you got it wrong')
     lives--;
+    removeHeart()
     console.log(lives)
     //send to end of game page
     if(lives === 0){
@@ -23,11 +23,12 @@ function riddle1(){
 }
 function riddle2(){
 
-  const answer = prompt('What room do ghosts avoid?');
-  let answerLowercase = answer.toLowerCase();
-  if(answerLowercase.search("living room" || "livingroom") === -1){
+  const answer2 = document.getElementById('answer2');
+  let answer2Lowercase = answer2.toLowerCase();
+  if(answer2Lowercase.search("living room" || "livingroom") === -1){
     alert('you got it wrong')
     lives--;
+    removeHeart()
     console.log(lives)
     //send to end of game page
     if(lives === 0){
@@ -43,16 +44,16 @@ function riddle2(){
   }
 }
 function riddle3(){
-
-  const answer = prompt('I don\'t have eyes, but once I did see. Once I had thoughts, but now I\'m white and empty.');
-  let answerLowercase = answer.toLowerCase();
-  if(answerLowercase.search("skull") === -1){
-    alert('you got it wrong')
+  const answer3 = document.getElementById('answer3');
+  let answer3Lowercase = answer3.toLowerCase();
+  if(answer3Lowercase.search("skull") === -1){
+    console.log('you got it wrong')
     lives--;
+    removeHeart()
     console.log(lives)
     //send to end of game page
     if(lives === 0){
-      alert('you died')
+      console.log('you died')
       //insert a link to jump to the game over you lose page
     }
     else{
@@ -60,10 +61,11 @@ function riddle3(){
     }
   }
   else{
-    alert('you got it right')
+    console.log('you got it right')
   }
 }
 
 riddle1();
 riddle2();
 riddle3();
+viewPageButton(victory);
