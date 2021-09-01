@@ -1,0 +1,177 @@
+html, body {
+  margin:0;
+  padding:0;
+}
+
+body {
+  background-color: rgb(15, 6, 6);;
+}
+
+.comic {
+  display:flex;
+  flex-wrap:wrap;
+  font-family:'Comic Sans', cursive;
+  padding:1vmin;
+}
+
+.panel {
+  background-color:#fff;
+  border:solid 2px #000;
+  border-radius: 7px;
+  box-shadow:0 6px 6px -6px #000;
+  display:inline-block;
+  flex:1 1;
+  height:200px;
+  margin:1vmin;
+  overflow:hidden;
+  position:relative;
+}
+
+.text {
+  background-color: rgba(179, 139, 7, 0.849);
+  opacity: .8;
+  border:solid 2px #000;
+  margin:0;
+  padding:3px 10px;
+}
+
+.top-left {
+  left:-6px;
+  position:absolute;
+  top:-2px;
+  transform:skew(-15deg);
+}
+
+.bottom-right {
+  bottom:-2px;
+  position:absolute;
+  right:-6px;
+  transform:skew(-15deg);
+}
+
+.speech {
+  background-color:#fff;
+  border:solid 2px #000;
+  border-radius:12px;
+  display:inline-block;
+  margin:.5em;
+  padding:.5em 1em;
+  position:relative;
+  height: 100px;
+}
+
+.speech:before {
+  border:solid 12px transparent;
+  border-left:solid 12px #000;
+  border-top:solid 12px #000;
+  bottom: -24px;
+  content:"";
+  height:0;
+  left:24px;
+  position:absolute;
+  transform:skew(-15deg);
+  width:0;
+}
+
+
+.speech:after {
+  border:solid 10px transparent;
+  border-left:solid 10px #fff;
+  border-top:solid 10px #fff;
+  bottom:-19px;
+  content:"";
+  height:0;
+  left:27px;
+  position:absolute;
+  transform:skew(-15deg);
+  width:0;
+}
+
+.panel:nth-child(1) {
+  flex-basis: 130px;
+}
+.panel:nth-child(2) {
+  flex-basis: 200px;
+}
+.panel:nth-child(3) {
+  flex-basis: 200px;
+}
+.panel:nth-child(4) {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 700px;
+}
+.panel:nth-child(5) {
+  display: flex;
+  flex-basis: 350px;
+  justify-content: flex-end;
+}
+.panel:nth-child(6) {
+  flex-basis: 200px;
+  margin-top: 100px;
+  height: 100px;
+}
+
+img#kingGeorge {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  opacity: .8;
+}
+
+img#milk {
+  width: 140%;
+  object-fit: cover;
+  position: relative;
+  right: 30px;
+  bottom: -10px;
+}
+
+img#shotgun {
+  width: 150%;
+  object-fit: cover;
+  position: relative;
+}
+
+img#real_coin {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  bottom: 0px;
+}
+
+#headsOrTails {
+  text-align: center
+}
+ 
+/* background colours */
+
+.panel:nth-child(1) {
+  background-image:radial-gradient(circle, darkred, rgb(0, 0, 0));
+  font-family: 'Bangers', cursive;
+}
+
+.panel {
+  background-image:radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
+  font-family: 'Bangers', cursive;
+}
+
+button {
+  font-family: 'Nosifer', cursive;
+  color: darkred;
+  background-image:radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
+}
+
+#player_info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: -10px;
+  margin-top: 45px;
+  color: darkred;
+  font-family: 'Nosifer', cursive;
+  font-size: 10%;
+}
+
+li#player_info {
+}

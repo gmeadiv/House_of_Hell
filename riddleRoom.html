@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
-        <link rel="stylesheet" href="./jsStyle.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/riddleRoom.css">
+    <link rel="stylesheet" href="./jsStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Nosifer&display=swap" rel="stylesheet">
   </head>
     <body>
       <header>
-        <div>
+         <div>
           <p>Lives 
             <span id="firstHeart">&hearts;</span>
             <span id="secondHeart">&hearts;</span>
@@ -18,7 +22,28 @@
         </div>
       </header>
       <main>
-        <form>
+        <article class="comic">
+          <div class="panel">
+            <p class="text top-left">Funny title for the ...</p>
+            <p class="text bottom-right">... riddle game</p>
+          </div>
+          <div class="panel">
+            <img id="" src="">
+            <p class="text top-left">Still need ideas</p>
+            <p class="text bottom-right">for what text to put here.</p>
+          </div>
+          <div class="panel">
+            <img id="" src="">
+            <p class="text top-left">not quite sure what the story for this room should be.</p>
+          </div>
+          <div class="panel">
+            <img id="" src="">
+            <p class="text top-left">luckily all this text can be changed!</p>
+            <p class="text bottom-right">same with the boxes and colors and images and backgrounds</p>
+          </div>
+          <div class="panel"></div>
+        </article>
+         <form>
           <label for="riddle1">The person who built it sold it. The person who bought it never used it. The person who used it never saw it. What is it?</label><br>
           <input type="text" id="answer1"><br>
           <label for="riddle2">What room do ghosts avoid?</label><br>
@@ -33,5 +58,6 @@
       </main>
       <script src="./js/app.js"></script>
       <script src="./js/riddle.js"></script>
+      <!-- <script src="./js/challengeRoom.js"></script> -->
     </body>
 </html>
