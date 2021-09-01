@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <link rel="stylesheet" href="./css/reset.css">
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./css/coinFlipRoom.css">
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Nosifer&display=swap" rel="stylesheet">
   </head>
     <body>
       <header></header>
       <main>
         <article class="comic">
           <div class="panel">
-            <p class="text top-left"></p>
-            <p class="text bottom-right">...something amazing happened</p>
+            <img id="kingGeorge" src="images/kinggeorge.png">
+            <p class="text top-left">"What's the most you've ever lost ...</p>
+            <p class="text bottom-right">... on a coin toss?"</p>
           </div>
           <div class="panel">
-            <p class="text top-left">Try resizing... </p>
-            <p class="text bottom-right">...it's responsive</p>
+            <img id="milk" src="images/milk.png">
+            <p class="text top-left">the man behind the voice comes into view.</p>
+            <p class="text bottom-right">He's sipping milk.</p>
           </div>
           <div class="panel">
-            <p class="speech">A speech bubble</p>
+            <img id="shotgun" src="images/shotgun.png">
+            <p class="text top-left">things don't look good.</p>
           </div>
           <div class="panel">
-            <p class="text bottom-right">THE END</p>
+            <img id="real_coin" src="images/real_coin.jpg">
+            <p class="text top-left">"You know what date is on
+              this coin? [Username's Birthday]. It's been
+              traveling all your life to get to you."</p>
+            <p class="text bottom-right">"And now it's here. And it's
+              either heads or tails, and you have
+              to call it."</p>
           </div>
         <div class="panel">
           <div id="headsOrTails" class="speech">
-            <p>Call it, username.</p>
+            <p>Call it, username:</p>
           <button type="button" id="heads" class="hidden">heads</button>
           <p>or</p>
           <button type="button" id="tails" class="hidden">tails</button>
           </div>
         </div>
           <div class="panel">
-            <p class="speech">A speech bubble</p>
+            <p class="text top-left">player information:</p>
+            <ul id="player_info">
+              <li>lives:</li>
+              <li>current level:</li>
+              <li>restart level</li>
+              <li>restart game</li>
+              <li>save game</li>
+            </ul>
           </div>
-
         </article>
         <!-- <div id="rockPaperScissors">
           <button type="button" id="rock" class="hidden">Rock</button>

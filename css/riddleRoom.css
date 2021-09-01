@@ -3,10 +3,6 @@ html, body {
   padding:0;
 }
 
-body {
-  background-color: rgb(15, 6, 6);;
-}
-
 .comic {
   display:flex;
   flex-wrap:wrap;
@@ -86,7 +82,7 @@ body {
 }
 
 .panel:nth-child(1) {
-  flex-basis: 130px;
+  flex-basis: 400px;
 }
 .panel:nth-child(2) {
   flex-basis: 200px;
@@ -95,11 +91,11 @@ body {
   flex-basis: 200px;
 }
 .panel:nth-child(4) {
-  flex-basis: 700px;
+  flex-basis: 800px;
   justify-content: flex-end;
 }
 .panel:nth-child(5) {
-  flex-basis: 350px;
+  flex-basis: 500px;
 }
 .panel:nth-child(6) {
   flex-basis: 200px;
@@ -108,30 +104,22 @@ body {
 }
 
 img#milk {
-  width: 140%;
-  object-fit: cover;
-  position: relative;
-  right: 0px;
-  bottom: -10px;
-}
-
-img#shotgun {
   width: 150%;
   object-fit: cover;
   position: relative;
+  right: 120px;
+}
+
+img#bed {
+  width: 150%;
+  object-fit: cover;
+  position: relative;
+  top: 10px;
 }
 
 img#real_coin {
   display: flex;
   align-self: flex-end;
-}
-
-img#kingGeorge {
-  width: 110%;
-  position: relative;
-  right: 35px;
-  bottom: -30px;
-  opacity: .8;
 }
 
 #headsOrTails {
