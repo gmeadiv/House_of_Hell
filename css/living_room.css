@@ -13,6 +13,7 @@ html, body {
 .panel {
   background-color:#fff;
   border:solid 2px #000;
+  border-radius: 7px;
   box-shadow:0 6px 6px -6px #000;
   display:inline-block;
   flex:1 1;
@@ -95,11 +96,6 @@ html, body {
 }
 .panel:nth-child(5) {
   flex-basis: 300px;
-}
-.panel:nth-child(6) {
-  flex-basis: 200px;
-  margin-top: 100px;
-  height: 100px;
 }
 
 img#kingGeorge {
