@@ -1,72 +1,97 @@
 'use strict'
 
-function riddle1(){
-  const answer1 = document.getElementById('answer1');
-  console.log(answer1);
-  let answer1Lowercase = answer1.toLowerCase();
-  if(answer1Lowercase.textContent === 'coffin') {
-    alert('you got it wrong');
+const form1Elem = document.getElementById('form1');
+
+const riddle1Elem = document.getElementById('riddle1')
+  const riddle2Elem = document.getElementById('riddle2')
+  const riddle3Elem = document.getElementById('riddle3')
+
+function handleSubmit(event) {
+
+  event.preventDefault();
+  if(event.target.riddleone.value){
+  let riddleone = event.target.riddleone.value;
+  riddleone = riddleone.toLowerCase();
+  if(riddleone === 'coffin'){
+    console.log('you got it right riddle 1');
+    riddle1Elem.remove();
+    riddle2Elem.classList.toggle('hidden');
+  }else{
+    console.log('wrrrrrong! Riddle 1 ');
     lives--;
     removeHeart();
-    console.log(lives);
-    //send to end of game page
-    if(lives === 0){
-      youDied();
-      //insert a link to jump to the game over you lose page
-    }
-    else{
-    riddle1();
-    }
   }
-  else{
-    alert('you got it right');
   }
-}
-function riddle2(){
 
-  const answer2 = document.getElementById('answer2');
-  let answer2Lowercase = answer2.toLowerCase();
-  if(answer2Lowercase.search("living room" || "livingroom") === -1){
-    alert('you got it wrong')
-    lives--;
-    removeHeart()
-    console.log(lives)
-    //send to end of game page
-    if(lives === 0){
-      youDied();
-      //insert a link to jump to the game over you lose page
+//   if(event.target.riddletwo.value){
+//   let riddletwo = event.target.riddletwo.value;
+//   riddletwo = riddletwo.toLowerCase();
+//   if (riddletwo === 'living room'|| riddletwo === 'livingroom'){
+//     console.log('you got it right riddle 2');
+//     riddle2Elem.remove();
+//     riddle3Elem.classList.toggle('hidden');
+//   }else{
+//     console.log('wrrrrrong! Riddle 2');
+//     lives--;
+//     removeHeart();
+//   }
+// }
+
+// if(event.target.riddlethree.value){
+//     let riddlethree = event.target.riddlethree.value;
+//     riddlethree = riddlethree.toLowerCase();
+//     if (riddlethree === 'skull'){
+//       console.log('you got it right riddle 3');
+//       riddle3Elem.remove();
+//       victory();
+//     }
+//     else{
+//       console.log('wrrrrrong! Riddle 3');
+//       lives--;
+//       removeHeart();
+//     }
+//   }
+//   if(lives === 0){
+//     youDied();
+//     form1Elem.removeEventListener('submit', handleSubmit)
+//   }
+}
+function handleSubmit2(event){
+  if(event.target.riddletwo.value){
+    let riddletwo = event.target.riddletwo.value;
+    riddletwo = riddletwo.toLowerCase();
+    if (riddletwo === 'living room'|| riddletwo === 'livingroom'){
+      console.log('you got it right riddle 2');
+      riddle2Elem.remove();
+      riddle3Elem.classList.toggle('hidden');
+    }else{
+      console.log('wrrrrrong! Riddle 2');
+      lives--;
+      removeHeart();
     }
-    else{
-    riddle2();
-    }
-  }
-  else{
-    alert('you got it right')
   }
 }
-function riddle3(){
-  const answer3 = document.getElementById('answer3');
-  let answer3Lowercase = answer3.toLowerCase();
-  if(answer3Lowercase.search("skull") === -1){
-    console.log('you got it wrong')
-    lives--;
-    removeHeart()
-    console.log(lives)
-    //send to end of game page
-    if(lives === 0){
-      youDied();
-      //insert a link to jump to the game over you lose page
+function handleSubmit3(event){
+  if(event.target.riddlethree.value){
+    let riddlethree = event.target.riddlethree.value;
+    riddlethree = riddlethree.toLowerCase();
+    if (riddlethree === 'skull'){
+      console.log('you got it right riddle 3');
+      riddle3Elem.remove();
+      victory();
     }
     else{
-    riddle3();
+      console.log('wrrrrrong! Riddle 3');
+      lives--;
+      removeHeart();
     }
   }
-  else{
-    console.log('you got it right')
+  if(lives === 0){
+    youDied();
+    form1Elem.removeEventListener('submit', handleSubmit)
   }
 }
 
-riddle1();
-riddle2();
-riddle3();
-viewPageButton(victory);
+form1Elem.addEventListener('submit', handleSubmit);
+form1Elem.addEventListener('submit', handleSubmit2);
+form1Elem.addEventListener('submit', handleSubmit3);

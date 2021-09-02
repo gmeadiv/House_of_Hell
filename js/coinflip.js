@@ -10,11 +10,6 @@ function headsOrTails(){
 headsOrTailsElem.addEventListener('click', headsOrTailsHandler);
 
 function headsOrTailsHandler(event){
-  if(lives === 0){
-    headsOrTailsElem.removeEventListener('click', headsOrTailsHandler)
-    youDied();
-    //insert a link to jump to the game over you lose page
-  }
   while(lives > 0){
   const tossResult = headsOrTails()
     if(event.target === headsElem){
@@ -46,5 +41,9 @@ function headsOrTailsHandler(event){
         break;
       }
     }
+  }
+  if(lives === 0){
+    headsOrTailsElem.removeEventListener('click', headsOrTailsHandler)
+    youDied();
   }
 }

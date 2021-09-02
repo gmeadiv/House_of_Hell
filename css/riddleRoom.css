@@ -1,6 +1,7 @@
 html, body {
   margin:0;
   padding:0;
+  background-color: black;
 }
 
 .comic {
@@ -150,6 +151,10 @@ button {
   font-family: 'Nosifer', cursive;
   font-size: 10%;
 }
-
+button {
+  font-family: 'Nosifer', cursive;
+  color: darkred;
+  background-image:radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
+}
 li#player_info {
 }

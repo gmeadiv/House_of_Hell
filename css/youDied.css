@@ -1,10 +1,45 @@
+#sara{
+  z-index: 10;
+  margin-left: 20%;
+  margin-top: 2.5%;
+}
+#saraImage{
+
+  height: 650px;
+}
+#victoryMenu{
+  position: fixed;
+  height: 40%;
+  width: 30%;
+  bottom: 4%;
+  right: 2%;
+  text-align: center;
+  color: darkred;
+  font-size: 40px;
+  line-height: 1.25;
+  border:solid 2px #000;
+  border-radius: 7px;
+  box-shadow:0 6px 6px -6px #000;
+  background-image: radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
+  font-family: Nosifer;
+  z-index: 0;
+
+}
+#victoryMenu p:first-of-type{
+  margin-top: 9.3%;
+}
+#victoryButtons{
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-between;
+  width: 461px;
+}
 #youDied{
   background-color: black transparent;
   position: absolute;
   width: 100%;
   height: 100%;
-
-  z-index: 10;
+  z-index: 5;
 }
 #gameOver{
   padding-top: 2%;
@@ -16,7 +51,34 @@
   font-family: Nosifer;
   font-size: 150px;
   line-height: 1.5;
+}
 
+#victory{
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+}
+#congrats{
+  height: 40%;
+  width: 30%;
+  position: fixed;
+  bottom: 4%;
+  right: 2%;
+  text-align: center;
+  color: darkred;
+  font-size: 28px;
+  line-height: 1.5;
+  border:solid 2px #000;
+  border-radius: 7px;
+  box-shadow:0 6px 6px -6px #000;
+  display:inline-block;
+  flex:1 1;
+  background-image: radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
+  font-family: 'Bangers', cursive;
+  z-index: 10;
+  
 }
 #menu{
   padding-top: 5%;
@@ -31,9 +93,112 @@ button {
   color: darkred;
   background-image:radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
 }
+
 a:link{
   color: darkred;
 }
 a:visited{
   color: darkred;
+}
+.typewriter p:first-of-type{
+  margin-top: 9%;
+}
+.typewriter p:first-child {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+.typewriter p:nth-child(2) {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+  animation: animated-text2 4s steps(29,end) 1s 1 normal both,
+             animated-cursor2 600ms steps(29,end) infinite;
+  animation-delay: 3s;
+}
+.typewriter p:nth-child(3) {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+  animation: animated-text3 4s steps(29,end) 1s 1 normal both,
+             animated-cursor3 600ms steps(29,end) infinite;
+  animation-delay: 6s;
+}
+.typewriter p:nth-child(4) {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+  animation: animated-text4 4s steps(29,end) 1s 1 normal both,
+             animated-cursor4 600ms steps(29,end) infinite;
+  animation-delay: 10s;
+}
+.typewriter p:nth-child(5) {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+  animation: animated-text5 4s steps(29,end) 1s 1 normal both,
+             animated-cursor5 600ms steps(29,end) infinite;
+  animation-delay: 12s;
+}
+
+@keyframes animated-text{
+  from{width: 0px;}
+  to{width: 472px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
+
+@keyframes animated-text2{
+  from{width: 0;}
+  to{width: 472px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor2{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
+@keyframes animated-text3{
+  from{width: 0;}
+  to{width: 472px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor3{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
+@keyframes animated-text4{
+  from{width: 0;}
+  to{width: 472px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor4{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
+@keyframes animated-text5{
+  from{width: 0;}
+  to{width: 472px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor5{
+  from{border-right-color: darkred}
+  to{border-right-color: transparent;}
+}
+.typewriter p:first-of-type{
+  margin-top: 9%;
 }

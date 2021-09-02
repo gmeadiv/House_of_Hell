@@ -66,9 +66,17 @@ function viewPageButton(room){
 }
 function youDied(){
   const youDiedElem = document.getElementById('youDied')
-  {
-    if(lives === 0){
-      youDiedElem.classList.toggle('hidden')
-    }
-  }
+  youDiedElem.classList.toggle('hidden')
 }
+function victory(){
+  const victoryElem = document.getElementById('victory')
+  victoryElem.classList.toggle('hidden')
+}
+
+congratsElem = document.getElementById('congrats');
+function saraHandler(event){
+  console.log(event.target)
+  saraElem = document.getElementById('sara');
+  saraElem.classList.toggle('hidden');
+}
+congratsElem.addEventListener('submit', saraHandler);
