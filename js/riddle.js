@@ -6,6 +6,8 @@ const riddle1Elem = document.getElementById('riddle1')
   const riddle2Elem = document.getElementById('riddle2')
   const riddle3Elem = document.getElementById('riddle3')
 
+getUserName();
+
 function handleSubmit(event) {
 
   event.preventDefault();
