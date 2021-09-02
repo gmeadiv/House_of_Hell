@@ -18,6 +18,7 @@ rockPaperScissorsElem.addEventListener('click', rockPaperScissorsHandler);
 //   }
 // }
 function rockPaperScissorsHandler(event){
+  console.log(event.target);
   while(lives > 0){
     if(event.target === rockElem){
         console.log('dead rock');
