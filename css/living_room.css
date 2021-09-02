@@ -3,6 +3,14 @@ html, body {
   padding:0;
 }
 
+#bloodyBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .comic {
   display:flex;
   flex-wrap:wrap;
@@ -112,7 +120,7 @@ img#hauntedRoom {
   bottom: 200px;
 }
 
-/* background colours */
+/* background colors */
 
 .panel:nth-child(1) {
   background-image:radial-gradient(circle, rgb(56, 53, 53), rgb(0, 0, 0));
@@ -128,6 +136,7 @@ button {
   font-family: 'Nosifer', cursive;
   color: darkred;
   background-image:radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
+  border-radius: 5px;
 }
 
 #player_info {

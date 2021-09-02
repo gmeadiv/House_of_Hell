@@ -3,8 +3,12 @@ html, body {
   padding:0;
 }
 
-body {
-  background-color: rgb(15, 6, 6);;
+#bloodyBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 /* COMIC PANELS AND EFFECTS*/
@@ -89,7 +93,8 @@ body {
 }
 
 .panel:nth-child(1) {
-  flex-basis: 130px;
+  min-width: 130px;
+  max-width: 200px;
 }
 .panel:nth-child(2) {
   flex-basis: 200px;
@@ -104,25 +109,37 @@ body {
 }
 .panel:nth-child(5) {
   display: flex;
-  flex-basis: 350px;
+  flex-basis: 300px;
   justify-content: flex-end;
 }
+
 .panel:nth-child(6) {
   flex-basis: 200px;
-  margin-top: 100px;
-  height: 100px;
 }
  
-/* background colours */
+/* background colors */
+.panel {
+  background-image:radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
+  font-family: 'Bangers', cursive;
+}
 
 .panel:nth-child(1) {
   background-image:radial-gradient(circle, darkred, rgb(0, 0, 0));
   font-family: 'Bangers', cursive;
 }
 
-.panel {
-  background-image:radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
+.panel:nth-child(5) {
+  background-image:radial-gradient(circle, darkred, rgb(0, 0, 0));
   font-family: 'Bangers', cursive;
+}
+
+img#roop {
+  width: 100%;
+  object-fit: cover;
+}
+
+img#roopTwo {
+  width: 50%;
 }
 
 img#milk {
@@ -154,6 +171,7 @@ button {
   font-family: 'Nosifer', cursive;
   color: darkred;
   background-image:radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
+  border-radius: 5px;
 }
 
 #player_info {
@@ -164,10 +182,14 @@ button {
   margin-top: 45px;
   color: darkred;
   font-family: 'Nosifer', cursive;
-  font-size: 10%;
+  font-size: 90%;
 }
-#lives{
-  background-color: white;;
+
+ul#player_info {
+  position: relative;
+  bottom: 20px;
 }
-li#player_info {
+
+li {
+  margin: 10px;
 }
