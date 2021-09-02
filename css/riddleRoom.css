@@ -83,25 +83,20 @@ html, body {
 }
 
 .panel:nth-child(1) {
-  flex-basis: 400px;
+  flex-basis: 200px;
 }
 .panel:nth-child(2) {
-  flex-basis: 200px;
+  flex-basis: 420px;
 }
 .panel:nth-child(3) {
-  flex-basis: 200px;
+  flex-basis: 150px;
 }
 .panel:nth-child(4) {
-  flex-basis: 800px;
+  flex-basis: 420px;
   justify-content: flex-end;
 }
 .panel:nth-child(5) {
-  flex-basis: 500px;
-}
-.panel:nth-child(6) {
   flex-basis: 200px;
-  margin-top: 100px;
-  height: 100px;
 }
 
 img#milk {

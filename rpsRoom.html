@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Roshambo</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/rpsRoom.css">
     <link rel="stylesheet" href="jsStyle.css">
@@ -11,52 +12,56 @@
   </head>
     <body>
       <header>
-        <div>
-          <p>Lives 
-            <span id="firstHeart">&hearts;</span>
-            <span id="secondHeart">&hearts;</span>
-            <span id="thirdHeart">&hearts;</span>
-            <span id="fourthHeart">&hearts;</span>
-            <span id="fifthHeart">&hearts;</span>
-          </p>
-        </div>
       </header>
       <main>
         <article class="comic">
           <div class="panel">
-            <p class="text top-left">Funny title for the ...</p>
-            <p class="text bottom-right">... rock, paper, scissors game</p>
+            <p class="text top-left">Let's play a game.</p>
+            <p class="text bottom-right">How about roshambo!</p>
           </div>
           <div class="panel">
             <img id="" src="">
-            <p class="text top-left">Still need ideas</p>
-            <p class="text bottom-right">for what text to put here.</p>
+            <p class="text top-left">"I found my first killing stone at the river."</p>
+            <p class="text bottom-right">"No sound better in the whole world than a man's skull cracking."</p>
           </div>
           <div class="panel">
             <img id="" src="">
-            <p class="text top-left">not quite sure what the story for this room should be.</p>
+            <p class="text bottom-right">"I never killed nobody with a piece o' paper before tho..."</p>
           </div>
           <div class="panel">
             <img id="" src="">
-            <p class="text top-left">luckily all this text can be changed!</p>
-            <p class="text bottom-right">same with the boxes and colors and images and backgrounds</p>
+            <p class="text top-left">"But scissors! The feeling in your hand as they slice through skin and muscle ..."</p>
+            <p class="text bottom-right">"... makes you realize our bodies are just bags of meat waiting to be opened!"</p>
           </div>
           <div class="panel">
-          <div id="rockPaperScissors">
-            <button type="button" id="rock" class="hidden">Rock</button>
-            <button type="button" id="paper" class="hidden">Paper</button>
-            <button type="button" id="scissors" class="hidden">Scissors</button>
+            <img id="" src="">
+            <div id="rockPaperScissors" class="speech">
+              <p>Pick a weapon Username:</p>
+              <button type="button" id="rock">Rock</button>
+              <button type="button" id="paper">Paper</button>
+              <p>or</p>
+              <button type="button" id="scissors">Scissors</button>
+            </div>
+            </div>
           </div>
+          <div class="panel">
+            <p class="text top-left">player information:</p>
+            <ul id="player_info">
+              <li>lives:
+                <span id="firstHeart">&hearts;</span>
+                <span id="secondHeart">&hearts;</span>
+                <span id="thirdHeart">&hearts;</span>
+                <span id="fourthHeart">&hearts;</span>
+                <span id="fifthHeart">&hearts;</span>
+              </li>
+              <li>current level:</li>
+              <li>restart level</li>
+              <li>restart game</li>
+              <li>save game</li>
+            </ul>
           </div>
         </article>
-         <div id="rockPaperScissors">
-          <button type="button" id="rock">Rock</button>
-          <button type="button" id="paper">Paper</button>
-          <button type="button" id="scissors">Scissors</button>
-        </div>
-        <form action="Room2.html"></form>
-          <button type="submit" id="toRoom3" class="hidden">Go to Room 3</button>
-        </form>
+        <button type="submit" id="toRiddler" class="hidden"><a href="riddleRoom.html">riddler</button></a>
       </main>
       <script src="./js/app.js"></script>
       <script src="./js/rockppr.js"></script>
