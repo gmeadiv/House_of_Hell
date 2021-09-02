@@ -43,6 +43,29 @@
           </div>
         </div>
       </div>
+      <div id="victory" class="hidden">
+        <div>
+          <div id="sara">
+            <img src="/images/evilSaraHorns.gif" id="saraImage">
+          </div>
+          <div id="congrats" class="typewriter">
+            <p>Congratulations!</p>
+            <p>You survived</p>
+            <p>the house of hell...</p>
+            <p>Wait... </p>
+            <p>someone's coming...</p>
+            <input type="submit" value="submit"></input>
+          </div>
+          <div id="victoryMenu">
+            <p>No one can escape</p>
+            <p>the house of hell</p>
+              <div id="victoryButtons">
+                <button type="submit"><a href="index.html">Homepage</a></button>
+                <button type="button"><a href="aboutUs.html">About Us</a></button>
+              </div>
+          </div>
+        </div>
+      </div>
       <header>
       </header>
       <main>
@@ -55,30 +78,30 @@
           <div class="panel">
             <img id="coffin" src="images/coffin.jpg">
             <p class="text top-left">The person who built it sold it. The person who bought it never used it.</p>
-            <form id="riddle1">
+            <!-- <form id="riddle1">
               <label for="riddle1"></label><br>
               <input type="text" id="answer1"><br>
               <input type="submit" value="Submit">
-            </form>
+            </form> -->
             <p class="text bottom-right">The person who used it never saw it. What is it?</p>
           </div>
           <div class="panel">
             <img id="livingRoom" src="images/livingRoom.jpg">
             <p class="text top-left">Which room do ghosts avoid?</p>
-            <form id="riddle2">
+            <!-- <form id="riddle2">
               <label for="riddle2"></label><br>
               <input type="text" id="answer2"><br>
               <input type="submit" value="Submit">
-            </form>
+            </form> -->
           </div>
           <div class="panel">
             <img id="skull" src="images/skull.jpg">
             <p class="text top-left">I don't have eyes, but once I did see.</p>
-            <form id="riddle3">
+            <!-- <form id="riddle3">
               <label for="riddle3"></label><br>
               <input type="text" id="answer3"><br>
               <input type="submit" value="Submit">
-            </form>
+            </form> -->
             <p class="text bottom-right">Once I had thoughts, but now I'm white and empty.</p>
           </div>
           <div class="panel">
@@ -98,8 +121,22 @@
             </ul>
           </div>
         </article>
-        <form action="victory.html"></form>
-          <button type="submit" id="victory" class="hidden">You win!</button>
+        <form id ="form1"> 
+          <div id="riddle1">
+            <label for="riddleone">What is your guess?</label><br>
+            <input type="text" name ="riddleone" id="answer1"><br>
+            <input type="submit" value="Submit" id="riddleSubmit">
+          </div>
+          <div id="riddle2" class="hidden">
+            <label for="riddletwo">What is your guess?</label><br>
+            <input type="text" name ="riddletwo" id="answer2"><br>
+            <input type="submit" value="Submit" id="riddleSubmit">
+          </div>
+          <div id="riddle3" class="hidden">
+          <label for="riddlethree">What is your guess?</label><br>
+          <input type="text" name ="riddlethree"id="answer3"><br>
+          <input type="submit" value="Submit" id="riddleSubmit">
+          </div>
         </form>
       </main>
       <script src="./js/app.js"></script>

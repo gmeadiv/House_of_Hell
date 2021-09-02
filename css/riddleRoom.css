@@ -1,6 +1,7 @@
 html, body {
   margin:0;
   padding:0;
+  background-color: black;
 }
 
 #bloodyBackground {
@@ -168,7 +169,10 @@ ul#player_info {
   position: relative;
   bottom: -30px;
 }
-
+button {
+  font-family: 'Nosifer', cursive;
+  color: darkred;
+  background-image:radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
+}
 li {
   margin: 10px;
-}
