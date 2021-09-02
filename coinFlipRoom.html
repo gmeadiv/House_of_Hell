@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Coin Flip</title>
     <link rel="stylesheet" href="./css/reset.css">
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
-    <link rel="stylesheet" href="jsStyle.css">
     <link rel="stylesheet" href="./css/coinFlipRoom.css">
+    <link rel="stylesheet" href="./css/youDied.css">
+    <link rel="stylesheet" href="./css/jsStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Nosifer&display=swap" rel="stylesheet">
   </head>
     <body>
-      <header>
+      <img id="bloodyBackground" src="images/background.jpeg">
+      <div id="youDied" class="hidden">
         <div>
-          <p>Lives 
-            <span id="firstHeart">&hearts;</span>
-            <span id="secondHeart">&hearts;</span>
-            <span id="thirdHeart">&hearts;</span>
-            <span id="fourthHeart">&hearts;</span>
-            <span id="fifthHeart">&hearts;</span>
-          </p>
+          <div id="gameOver">
+            <p>You</p>
+            <p>Died</p>
+          </div>
+          <div id="menu">
+            <button type="submit">Retry Level</button>
+            <button type="submit"><a href="index.html">Homepage</a></button>
+            <button type="button"><a href="aboutUs.html">About Us</a></button>
+          </div>
         </div>
+      </div>
+      <header>
       </header>
       <main>
         <article class="comic">
           <div class="panel">
-            <img id="kingGeorge" src="images/kinggeorge.png">
+            <img id="roop" src="images/roop.jfif">
             <p class="text top-left">"What's the most you've ever lost ...</p>
             <p class="text bottom-right">... on a coin toss?"</p>
           </div>
           <div class="panel">
             <img id="milk" src="images/milk.png">
-            <p class="text top-left">the man behind the voice comes into view.</p>
+            <p class="text top-left">our first serial killer comes into view.</p>
             <p class="text bottom-right">He's sipping milk.</p>
           </div>
           <div class="panel">
             <img id="shotgun" src="images/shotgun.png">
-            <p class="text top-left">things don't look good.</p>
+            <p class="text top-left">things look grim.</p>
           </div>
           <div class="panel">
             <img id="real_coin" src="images/real_coin.jpg">
@@ -48,17 +55,24 @@
               to call it."</p>
           </div>
         <div class="panel">
+          <img id="roopTwo" src="images/roop.jfif">
           <div id="headsOrTails" class="speech">
             <p>Call it, username:</p>
-          <button type="button" id="heads" class="hidden">heads</button>
+          <button type="button" id="heads">heads</button>
           <p>or</p>
-          <button type="button" id="tails" class="hidden">tails</button>
+          <button type="button" id="tails">tails</button>
           </div>
         </div>
           <div class="panel">
             <p class="text top-left">player information:</p>
             <ul id="player_info">
-              <li>lives:</li>
+              <li>lives:
+                <span id="firstHeart">&hearts;</span>
+                <span id="secondHeart">&hearts;</span>
+                <span id="thirdHeart">&hearts;</span>
+                <span id="fourthHeart">&hearts;</span>
+                <span id="fifthHeart">&hearts;</span>
+              </li>
               <li>current level:</li>
               <li>restart level</li>
               <li>restart game</li>
@@ -71,13 +85,11 @@
           <button type="button" id="paper" class="hidden">Paper</button>
           <button type="button" id="scissors" class="hidden">Scissors</button>
         </div> -->
-         <div id="headsOrTails">
+         <!-- <div id="headsOrTails">
           <button type="button" id="heads">Heads</button>
           <button type="button" id="tails">Tails</button>
-        </div>
-        <form action="Room2.html"></form>
-          <button type="submit" id="toRoom2" class="hidden">Go to Room 2</button>
-        </form>
+        </div> -->
+        <button type="submit" id="toRoshambo" class="hidden"><a href="rpsRoom.html">roshambo</button></a>
       </main>
       <script src="./js/app.js"></script>
       <script src="./js/coinflip.js"></script>

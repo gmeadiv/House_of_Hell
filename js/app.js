@@ -25,21 +25,38 @@ function removeHeart(){
   }
 }
 
-function Player(name, level){
-  this.name = name;
-  this.level;
-}
+// function Player(name, level, lives, day, month, year){
+//   this.name = name;
+//   this.level = level;
+//   this.lives = lives;
+//   this.day = day;
+//   this.month = month;
+//   this.year = year;
+// }
 
-Player.playerArray = [];
+// Player.playerArray = [];
 
 function storePlayers(){
   const stringPlayers = JSON.stringify(Player.playerArray);
   localStorage.setPlayers('players', storePlayers);
 }
 
+// Retrieves players from the local storage and parses and creates new player
+function getPlayers(){
+  const stringPlayers = localStorage.getItem('players');
+  if(stringPlayers){
+    const parsedPlayers = JSON.parse(stringPlayers);
+    for(let player of parsedPlayers){
+      const myPlayer = new Player(player.name, player.level);
+      Player.playerArray.push(myPlayer);
+    }
+  }
+  return Player.playerArray;
+}
+
 function viewPageButton(room){
-  const room2ButtonElem = document.getElementById('toRoom2');
-  const room3ButtonElem = document.getElementById('toRoom3');
+  const room2ButtonElem = document.getElementById('toRoshambo');
+  const room3ButtonElem = document.getElementById('toRiddler');
   if(room === 2){
     room2ButtonElem.classList.toggle('hidden');
   }
@@ -48,5 +65,13 @@ function viewPageButton(room){
   }
   else if(room === victory){
     victoryButtonElem.classList.toggle('hidden');
+  }
+}
+function youDied(){
+  const youDiedElem = document.getElementById('youDied')
+  {
+    if(lives === 0){
+      youDiedElem.classList.toggle('hidden')
+    }
   }
 }

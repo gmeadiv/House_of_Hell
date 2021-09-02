@@ -3,7 +3,7 @@ body{
 }
 
 header{
-  color: white;
+  color: darkred;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   padding-top: 20px;
@@ -63,7 +63,7 @@ main{
   position: absolute;
   height: 100px;
   width: 100px;
-  left: 46%;
+  left: 47%;
   bottom: 75%;
   z-index: 1;
 }
@@ -84,22 +84,19 @@ main{
   box-shadow: 0 0 30px red;
 }
 .popup{
-  color: white;
+  color: red;
+  background-color: white;
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.25;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   padding: 7px;
 }
-.popup p{
-  margin-top: 2px;
-  margin-left: 5px;
-}
 .popup p:nth-child(1)
 {
-  margin-top: 20px;
+  margin-top: 10px;
   font-weight: bold;
   font-size: 20px;
 }
@@ -115,7 +112,6 @@ main{
 #anthonyPopUp{
   width: 475px;
   height: 250px;
-  background-color: #555;
   border-radius: 6px;
   position: absolute;
   z-index: 1;
@@ -123,12 +119,9 @@ main{
   right: 125%;
 }
 #georgePopUp{
-  width: 425px;
+  width: 450px;
   height: 250px;
-  background-color: #555;
-  color: #fff;
   border-radius: 6px;
-  padding: 20px;
   position: absolute;
   z-index: 1;
   bottom: 1%;
@@ -137,10 +130,7 @@ main{
 #andreaPopUp{
   width: 360px;
   height: 300px;
-  background-color: #555;
-  color: #fff;
   border-radius: 6px;
-  padding: 20px;
   position: absolute;
   z-index: 1;
   bottom: 1%;
@@ -149,10 +139,7 @@ main{
 #roopPopUp{
   width: 340px;
   height: 300px;
-  background-color: #555;
-  color: #fff;
   border-radius: 6px;
-  padding: 20px;
   position: absolute;
   z-index: 1;
   bottom: 1%;
@@ -161,10 +148,7 @@ main{
 #zackPopUp{
   width: 360px;
   height: 315px;
-  background-color: #555;
-  color: #fff;
   border-radius: 6px;
-  padding: 20px;
   position: absolute;
   z-index: 1;
   top: 120%;
@@ -179,7 +163,7 @@ main{
   margin-left: -5px; */
   border-width: 5px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent;
+  border-color: black transparent transparent transparent;
 }
 
 .profile .show{
@@ -198,10 +182,10 @@ main{
 }
 
 a:link{
-  color: red;
+  color: darkorange;
   text-decoration: none;
 }
 a:visited{
-  color: red;
+  color: darkorange;
   text-decoration: none;
 }

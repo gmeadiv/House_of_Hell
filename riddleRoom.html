@@ -1,57 +1,103 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Riddler</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/riddleRoom.css">
-    <link rel="stylesheet" href="./jsStyle.css">
+    <link rel="stylesheet" href="./css/jsStyle.css">
+    <link rel="stylesheet" href="./css/youDied.css">
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Nosifer&display=swap" rel="stylesheet">
+    <style>
+      input[type=submit] {
+        font-family: 'Nosifer', cursive;
+        color: darkred;
+        background-image:radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
+        border-radius: 5px;
+        font-size: 80%;
+        margin-left: 10px;
+      }
+      input[type=text] {
+        background-color: rgba(179, 139, 7, 0.849);
+        border-radius: 5px;
+        color: black;
+        font-family: 'Bangers', cursive;
+        margin-left: 10px;
+      }
+    </style>
   </head>
     <body>
-      <header>
-         <div>
-          <p>Lives 
-            <span id="firstHeart">&hearts;</span>
-            <span id="secondHeart">&hearts;</span>
-            <span id="thirdHeart">&hearts;</span>
-            <span id="fourthHeart">&hearts;</span>
-            <span id="fifthHeart">&hearts;</span>
-          </p>
+      <img id="bloodyBackground" src="images/background.jpeg">
+      <div id="youDied" class="hidden">
+        <div>
+          <div id="gameOver">
+            <p>You</p>
+            <p>Died</p>
+          </div>
+          <div id="menu">
+            <button type="submit">Retry Level</button>
+            <button type="submit"><a href="index.html">Homepage</a></button>
+            <button type="button"><a href="aboutUs.html">About Us</a></button>
+          </div>
         </div>
+      </div>
+      <header>
       </header>
       <main>
         <article class="comic">
           <div class="panel">
-            <p class="text top-left">Funny title for the ...</p>
-            <p class="text bottom-right">... riddle game</p>
+            <img id="anthony" src="images/anthony.jpg">
+            <p class="text top-left"> And last, but not least ...</p>
+            <p class="text bottom-right">... Riddle me this Username!</p>
           </div>
           <div class="panel">
-            <img id="" src="">
-            <p class="text top-left">Still need ideas</p>
-            <p class="text bottom-right">for what text to put here.</p>
+            <img id="coffin" src="images/coffin.jpg">
+            <p class="text top-left">The person who built it sold it. The person who bought it never used it.</p>
+            <form id="riddle1">
+              <label for="riddle1"></label><br>
+              <input type="text" id="answer1"><br>
+              <input type="submit" value="Submit">
+            </form>
+            <p class="text bottom-right">The person who used it never saw it. What is it?</p>
           </div>
           <div class="panel">
-            <img id="" src="">
-            <p class="text top-left">not quite sure what the story for this room should be.</p>
+            <img id="livingRoom" src="images/livingRoom.jpg">
+            <p class="text top-left">Which room do ghosts avoid?</p>
+            <form id="riddle2">
+              <label for="riddle2"></label><br>
+              <input type="text" id="answer2"><br>
+              <input type="submit" value="Submit">
+            </form>
           </div>
           <div class="panel">
-            <img id="" src="">
-            <p class="text top-left">luckily all this text can be changed!</p>
-            <p class="text bottom-right">same with the boxes and colors and images and backgrounds</p>
+            <img id="skull" src="images/skull.jpg">
+            <p class="text top-left">I don't have eyes, but once I did see.</p>
+            <form id="riddle3">
+              <label for="riddle3"></label><br>
+              <input type="text" id="answer3"><br>
+              <input type="submit" value="Submit">
+            </form>
+            <p class="text bottom-right">Once I had thoughts, but now I'm white and empty.</p>
           </div>
-          <div class="panel"></div>
+          <div class="panel">
+            <p class="text top-left">player information:</p>
+            <ul id="player_info">
+              <li class="lives">lives:
+                <span id="firstHeart">&hearts;</span>
+                <span id="secondHeart">&hearts;</span>
+                <span id="thirdHeart">&hearts;</span>
+                <span id="fourthHeart">&hearts;</span>
+                <span id="fifthHeart">&hearts;</span>
+              </li>
+              <li>current level:</li>
+              <li>restart level</li>
+              <li>restart game</li>
+              <li>save game</li>
+            </ul>
+          </div>
         </article>
-         <form>
-          <label for="riddle1">The person who built it sold it. The person who bought it never used it. The person who used it never saw it. What is it?</label><br>
-          <input type="text" id="answer1"><br>
-          <label for="riddle2">What room do ghosts avoid?</label><br>
-          <input type="text" id="answer2"><br>
-          <label for="riddle3">I don't have eyes, but once I did see. Once I had thoughts, but now I'm white and empty.</label><br>
-          <input type="text" id="answer3"><br>
-          <input type="submit" value="Submit">
-        </form>
         <form action="victory.html"></form>
           <button type="submit" id="victory" class="hidden">You win!</button>
         </form>

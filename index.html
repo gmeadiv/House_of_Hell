@@ -13,9 +13,9 @@
   <header>
     <nav id="menu">
       <ul>
-        <li><a href="./living_room.html">begin new game</a></li>
-        <li>continue game</li>
-        <li>about the gamemakers</li>
+        <li><button type="button" id="start"><a href="living_room.html">Start Game</a></button></li>
+        <li><button type="button" id="continue">Continue</button></li>
+        <li><button type="button" id="about"><a href="aboutUs.html">About Us</a></button></li>
       </ul>
     </nav>
     <section id="title">
@@ -23,6 +23,25 @@
     </section>
   </header>
   <main>
+    <div id="leaderboard">
+
+    </div>
+    <form id ="userinfo">
+      <fieldset>
+        <legend>Enter Your Information</legend>
+        <label>Name:</label>
+        <input type ="text" name ="name" id ="name_user" required >
+        <label>Month:</label>
+        <input type ="number" name="month" min="1" max="12" id="month_user" required >
+        <label>Day:</label>
+        <input type = "number" name ="day" min="1" max="31" id="day_user"  required>
+        <label>Year:</label>
+        <input type = "number" name ="year" min="1900" max ="2021" id="year_user" required>
+      </fieldset>
+      <button type="submit"> Submit</button>
+    </form>
   </main>
+    <script src="./js/app.js"></script>
+    <script src="./js/home.js"></script>
 </body>
 </html>

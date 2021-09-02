@@ -3,10 +3,15 @@ html, body {
   padding:0;
 }
 
-body {
-  background-color: rgb(15, 6, 6);;
+#bloodyBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
+/* COMIC PANELS AND EFFECTS*/
 .comic {
   display:flex;
   flex-wrap:wrap;
@@ -50,14 +55,14 @@ body {
 }
 
 .speech {
-  background-color:#fff;
+  background-color:rgba(179, 139, 7, 0.849);
   border:solid 2px #000;
   border-radius:12px;
   display:inline-block;
   margin:.5em;
   padding:.5em 1em;
   position:relative;
-  height: 100px;
+  height: 120px;
 }
 
 .speech:before {
@@ -76,8 +81,8 @@ body {
 
 .speech:after {
   border:solid 10px transparent;
-  border-left:solid 10px #fff;
-  border-top:solid 10px #fff;
+  border-left:solid 10px rgba(179, 139, 7, 0.849);
+  border-top:solid 10px rgba(179, 139, 7, 0.849);
   bottom:-19px;
   content:"";
   height:0;
@@ -88,7 +93,8 @@ body {
 }
 
 .panel:nth-child(1) {
-  flex-basis: 130px;
+  min-width: 130px;
+  max-width: 200px;
 }
 .panel:nth-child(2) {
   flex-basis: 200px;
@@ -103,20 +109,37 @@ body {
 }
 .panel:nth-child(5) {
   display: flex;
-  flex-basis: 350px;
+  flex-basis: 300px;
   justify-content: flex-end;
 }
+
 .panel:nth-child(6) {
   flex-basis: 200px;
-  margin-top: 100px;
-  height: 100px;
+}
+ 
+/* background colors */
+.panel {
+  background-image:radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
+  font-family: 'Bangers', cursive;
 }
 
-img#kingGeorge {
+.panel:nth-child(1) {
+  background-image:radial-gradient(circle, darkred, rgb(0, 0, 0));
+  font-family: 'Bangers', cursive;
+}
+
+.panel:nth-child(5) {
+  background-image:radial-gradient(circle, darkred, rgb(0, 0, 0));
+  font-family: 'Bangers', cursive;
+}
+
+img#roop {
   width: 100%;
   object-fit: cover;
-  position: relative;
-  opacity: .8;
+}
+
+img#roopTwo {
+  width: 50%;
 }
 
 img#milk {
@@ -124,7 +147,7 @@ img#milk {
   object-fit: cover;
   position: relative;
   right: 30px;
-  bottom: -10px;
+  bottom: 5px;
 }
 
 img#shotgun {
@@ -143,23 +166,12 @@ img#real_coin {
 #headsOrTails {
   text-align: center
 }
- 
-/* background colours */
-
-.panel:nth-child(1) {
-  background-image:radial-gradient(circle, darkred, rgb(0, 0, 0));
-  font-family: 'Bangers', cursive;
-}
-
-.panel {
-  background-image:radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
-  font-family: 'Bangers', cursive;
-}
 
 button {
   font-family: 'Nosifer', cursive;
   color: darkred;
   background-image:radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
+  border-radius: 5px;
 }
 
 #player_info {
@@ -170,8 +182,14 @@ button {
   margin-top: 45px;
   color: darkred;
   font-family: 'Nosifer', cursive;
-  font-size: 10%;
+  font-size: 90%;
 }
 
-li#player_info {
+ul#player_info {
+  position: relative;
+  bottom: 20px;
+}
+
+li {
+  margin: 10px;
 }

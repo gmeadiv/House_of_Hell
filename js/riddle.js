@@ -2,15 +2,16 @@
 
 function riddle1(){
   const answer1 = document.getElementById('answer1');
+  console.log(answer1);
   let answer1Lowercase = answer1.toLowerCase();
-  if(answer1Lowercase.search("coffin") === -1){
-    alert('you got it wrong')
+  if(answer1Lowercase.textContent === 'coffin') {
+    alert('you got it wrong');
     lives--;
-    removeHeart()
-    console.log(lives)
+    removeHeart();
+    console.log(lives);
     //send to end of game page
     if(lives === 0){
-      alert('you died')
+      youDied();
       //insert a link to jump to the game over you lose page
     }
     else{
@@ -18,7 +19,7 @@ function riddle1(){
     }
   }
   else{
-    alert('you got it right')
+    alert('you got it right');
   }
 }
 function riddle2(){
@@ -32,7 +33,7 @@ function riddle2(){
     console.log(lives)
     //send to end of game page
     if(lives === 0){
-      alert('you died')
+      youDied();
       //insert a link to jump to the game over you lose page
     }
     else{
@@ -53,7 +54,7 @@ function riddle3(){
     console.log(lives)
     //send to end of game page
     if(lives === 0){
-      console.log('you died')
+      youDied();
       //insert a link to jump to the game over you lose page
     }
     else{
