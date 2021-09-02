@@ -15,8 +15,8 @@
       <main>
         <article class="comic">
           <div class="panel">
-            <p class="text top-left">Everything is black. The hood on Username's head itches.</p>
-            <p class="text bottom-right">The stench of rotting flesh and dried blood fills Username's nostrils.</p>
+            <p class="text top-left">Everything is black. The hood on your head itches.</p>
+            <p class="text bottom-right">The stench of rotting flesh and dried blood fills your nostrils.</p>
           </div>
           <div class="panel">
             <img id="kingGeorge" src="images/kinggeorge.png">
@@ -25,7 +25,7 @@
           </div>
           <div class="panel">
             <img id="hauntedRoom" src="images/hauntedRoom.jpg">
-            <p class="text top-left">"Welcome to the House of Hell, Username."</p>
+            <p class="text top-left">Welcome to the House of Hell,<span id="username"></span></p>
             <p class="text bottom-right">"There are three psychopaths scattered about and they like to play games and riddles. If you want to play with with them, you just may be able to escape with your life!"</p>
           </div>
           <!-- <div class="panel">
@@ -35,7 +35,7 @@
           </div> -->
           <div class="panel">
             <div id="headsOrTails" class="speech">
-              <p>What will you do, username?</p>
+              <p>What will you do?<span id="username"></span></p>
             <button type="button" id="heads"><a href="coinFlipRoom.html">play game</a></button>
             <p>or</p>
             <button type="button" id="tails"><a href="index.html">give up and die</a></button>
@@ -43,7 +43,9 @@
           </div>
         </article>
       </main>
-      <!-- <script src="./js/app.js"></script> -->
+      <script src="js/home.js"></script>
+      <script src="./js/app.js"></script>
+      <script src="./js/living_room.js"></script>
       <!-- <script src="./js/challengeRoom.js"></script> -->
     </body>
 </html>
