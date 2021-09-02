@@ -17,6 +17,10 @@ rockPaperScissorsElem.addEventListener('click', rockPaperScissorsHandler);
 //     room3ButtonElem.classList.toggle('hidden');
 //   }
 // }
+
+getUserName();
+// console.log(getUserName());
+
 function rockPaperScissorsHandler(event){
   console.log(event.target);
   while(lives > 0){

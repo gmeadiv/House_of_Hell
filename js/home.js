@@ -9,10 +9,17 @@ const continueButton = document.getElementById('continue');
 const formElem = document.getElementById('userinfo');
 const divElem = document.getElementById('leaderboard');
 const ulElem = document.createElement('ul');
+
+if (divElem) {
 divElem.appendChild(ulElem);
+}
+
 const h2Elem = document.createElement('h2');
 h2Elem.textContent = 'LEADERBOARD';
+
+if (ulElem) {
 ulElem.appendChild(h2Elem);
+}
 
 function Player(name, level, lives, day, month, year){
   this.name = name;
@@ -23,9 +30,12 @@ function Player(name, level, lives, day, month, year){
   this.year = year;
 }
 
-
-//const playerArray = Player([]);
 Player.playerArray = [];
+if (localStorage.getItem('players')) {
+//const playerArray = Player([]);
+const playerStorage = JSON.parse(localStorage.getItem('players'));
+Player.playerArray = playerStorage;
+}
 
 // We need to use stringified array from local storage. So, time being I am using Player.length in "for loop"
 for (let i =0; i< Player.playerArray.length;i++){
@@ -33,6 +43,26 @@ for (let i =0; i< Player.playerArray.length;i++){
   liElem.textContent = "Player's info[i]";
   // We can add text with username, level cleared and how many killers released
   ulElem.appendChild(liElem);
+}
+
+function storePlayers(){
+  const stringPlayers = JSON.stringify(Player.playerArray);
+  console.log(stringPlayers);
+  localStorage.setItem('players', stringPlayers);
+}
+
+// Retrieves players from the local storage and parses and creates new player
+function getPlayers(){
+  const stringPlayers = localStorage.getItem('players');
+  if(stringPlayers){
+    console.log(stringPlayers);
+    const parsedPlayers = JSON.parse(stringPlayers);
+    for(let player of parsedPlayers){
+      const myPlayer = new Player(player.name, player.level, player.lives, player.day, player.month, player.year);
+      Player.playerArray.push(myPlayer);
+    }
+  }
+  return Player.playerArray;
 }
 
 function handleSubmit(event) {
@@ -48,7 +78,7 @@ function handleSubmit(event) {
   const year = parseInt(event.target.year.value);
   const player = new Player(name, level, lives, day, month, year);
   Player.playerArray.push(player);
-  console.log(Player.playerArray);
+  // console.log(Player.playerArray);
   //console.log(name, month, day ,year);
   const today = new Date();
   const todayYear = today.getFullYear();
@@ -83,7 +113,10 @@ if(todayMonth > month){
 
 
   document.getElementById("userinfo").reset();
+  storePlayers();
 }
+
+// getPlayers();
 
 // function to handle the click even in our home page menu
 //may not be needed as buttons handle transfers in html
@@ -108,6 +141,47 @@ function handleClick(event){
   // how can that stored information be used on this end to navigate to the page the last played
 }
 
+// function getName() {
+  // for (let i = 0; i < Player.playerArray.length; i++) {
+  //   const name = Player.playerArray.name;
+  //   if (name === globalName) {
+  //     return Player.playerArray.name[i];
+  //   }
+  // }
 
+// }
+
+function getUserName() {
+  let usernameElem = document.getElementById('username');
+  const name = Player.playerArray[0].name;
+  const pElem = document.createElement('p');
+  pElem.textContent = name;
+  usernameElem.appendChild(pElem);
+  // const spanElem = document.createElement('span');
+  // pElem.appendChild(spanElem);
+  // Player.playerArray.name = usernameElem;
+  // for (let i = 0; i < Player.playerArray.length; i++) {
+  //   if (currentName === 
+  // }
+  // return usernameElem;
+}
+// console.log(Player.playerArray[0].name);
+// console.log(getUserName());
+
+function getBirthYear() {
+  let birthElem = document.getElementById('birthyear');
+  const year = Player.playerArray[0].year;
+  const pElem = document.createElement('p');
+  pElem.textContent = year;
+  birthElem.appendChild(pElem);
+}
+
+if (formElem) {
 formElem.addEventListener('submit', handleSubmit);
+}
+if (menuElem) {
 menuElem.addEventListener('click', handleClick);
+}
+// MOVED FROM app.js
+
+
