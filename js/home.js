@@ -1,5 +1,11 @@
 'use strict'
 
+// variables created to handle button click on home screen
+// may not be needed because html handles page transfer
+// const menuElem = document.getElementById('menu');
+// const startButton = document.getElementById('start');
+// const continueButton = document.getElementById('continue');
+// const aboutButton = document.getElementById('about');
 const formElem = document.getElementById('userinfo');
 const divElem = document.getElementById('leaderboard');
 const ulElem = document.createElement('ul');
@@ -60,5 +66,29 @@ if(todayMonth > month){
   document.getElementById("userinfo").reset();
 }
 
+// function to handle the click even in our home page menu
+//may not be needed as buttons handle transfers in html
+function handleClick(event){
+  const playerLevel;
+  const playerLives;
+  
+  if(event.target === continueButton){
+    const previousPlayers = getPlayers();
+    for(let player in previousPlayers){
+      if(player.name === 0){//players name from form
+        playerLevel = player.level;
+        playerLives = player.lives;
+      }
+    }
+
+  }
+  
+  return playerLevel;
+  // here insert code to navigate to the level the player was previously on
+  // how are we going to store the level information?
+  // how can that stored information be used on this end to navigate to the page the last played
+}
+
 
 formElem.addEventListener('submit', handleSubmit);
+menuElem.addEventListener('click', handleClick());
