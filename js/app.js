@@ -25,13 +25,16 @@ function removeHeart(){
   }
 }
 
-function Player(name, level, lives){
-  this.name = name;
-  this.level = level;
-  this.lives = lives;
-}
+// function Player(name, level, lives, day, month, year){
+//   this.name = name;
+//   this.level = level;
+//   this.lives = lives;
+//   this.day = day;
+//   this.month = month;
+//   this.year = year;
+// }
 
-Player.playerArray = [];
+// Player.playerArray = [];
 
 function storePlayers(){
   const stringPlayers = JSON.stringify(Player.playerArray);
@@ -52,8 +55,8 @@ function getPlayers(){
 }
 
 function viewPageButton(room){
-  const room2ButtonElem = document.getElementById('toRoom2');
-  const room3ButtonElem = document.getElementById('toRoom3');
+  const room2ButtonElem = document.getElementById('toRoshambo');
+  const room3ButtonElem = document.getElementById('toRiddler');
   if(room === 2){
     room2ButtonElem.classList.toggle('hidden');
   }

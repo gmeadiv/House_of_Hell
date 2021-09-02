@@ -10,8 +10,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Nosifer&display=swap" rel="stylesheet">
+    <style>
+      input[type=submit] {
+        font-family: 'Nosifer', cursive;
+        color: darkred;
+        background-image:radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
+        border-radius: 5px;
+        font-size: 80%;
+        margin-left: 10px;
+      }
+      input[type=text] {
+        background-color: rgba(179, 139, 7, 0.849);
+        border-radius: 5px;
+        color: black;
+        font-family: 'Bangers', cursive;
+        margin-left: 10px;
+      }
+    </style>
   </head>
     <body>
+      <img id="bloodyBackground" src="images/background.jpeg">
       <div id="youDied" class="hidden">
         <div>
           <div id="gameOver">
@@ -53,11 +71,12 @@
       <main>
         <article class="comic">
           <div class="panel">
-            <p class="text top-left">Funny title for the ...</p>
-            <p class="text bottom-right">... riddle game</p>
+            <img id="anthony" src="images/anthony.jpg">
+            <p class="text top-left"> And last, but not least ...</p>
+            <p class="text bottom-right">... Riddle me this Username!</p>
           </div>
           <div class="panel">
-            <img id="" src="">
+            <img id="coffin" src="images/coffin.jpg">
             <p class="text top-left">The person who built it sold it. The person who bought it never used it.</p>
             <!-- <form id="riddle1">
               <label for="riddle1"></label><br>
@@ -67,7 +86,7 @@
             <p class="text bottom-right">The person who used it never saw it. What is it?</p>
           </div>
           <div class="panel">
-            <img id="" src="">
+            <img id="livingRoom" src="images/livingRoom.jpg">
             <p class="text top-left">Which room do ghosts avoid?</p>
             <!-- <form id="riddle2">
               <label for="riddle2"></label><br>
@@ -76,7 +95,7 @@
             </form> -->
           </div>
           <div class="panel">
-            <img id="" src="">
+            <img id="skull" src="images/skull.jpg">
             <p class="text top-left">I don't have eyes, but once I did see.</p>
             <!-- <form id="riddle3">
               <label for="riddle3"></label><br>
@@ -88,7 +107,7 @@
           <div class="panel">
             <p class="text top-left">player information:</p>
             <ul id="player_info">
-              <li>lives:
+              <li class="lives">lives:
                 <span id="firstHeart">&hearts;</span>
                 <span id="secondHeart">&hearts;</span>
                 <span id="thirdHeart">&hearts;</span>
