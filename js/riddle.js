@@ -10,7 +10,7 @@ function riddle1(){
     console.log(lives)
     //send to end of game page
     if(lives === 0){
-      alert('you died')
+      youDied();
       //insert a link to jump to the game over you lose page
     }
     else{
@@ -32,7 +32,7 @@ function riddle2(){
     console.log(lives)
     //send to end of game page
     if(lives === 0){
-      alert('you died')
+      youDied();
       //insert a link to jump to the game over you lose page
     }
     else{
@@ -53,7 +53,7 @@ function riddle3(){
     console.log(lives)
     //send to end of game page
     if(lives === 0){
-      console.log('you died')
+      youDied();
       //insert a link to jump to the game over you lose page
     }
     else{

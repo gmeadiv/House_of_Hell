@@ -6,7 +6,6 @@ const rockElem = document.getElementById('rock');
 const paperElem = document.getElementById('paper');
 const scissorsElem = document.getElementById('scissors');
 
-
 rockPaperScissorsElem.addEventListener('click', rockPaperScissorsHandler);
 function viewPageButton(room){
   const room2ButtonElem = document.getElementById('toRoom2');
@@ -21,7 +20,7 @@ function viewPageButton(room){
 function rockPaperScissorsHandler(event){
   if(lives === 0){
     rockPaperScissorsElem.removeEventListener('click', rockPaperScissorsHandler);
-    alert('5 chances gone');
+    youDied();
     //insert a link to jump to the game over you lose page
   }
   while(lives > 0){

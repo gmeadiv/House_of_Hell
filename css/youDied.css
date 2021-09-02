@@ -1,0 +1,39 @@
+#youDied{
+  background-color: black transparent;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  z-index: 10;
+}
+#gameOver{
+  padding-top: 2%;
+  width: 100%;
+  height: 75%;
+  text-align: center;
+  color: darkred;
+  opacity: 90%;
+  font-family: Nosifer;
+  font-size: 150px;
+  line-height: 1.5;
+
+}
+#menu{
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 65%;
+  margin-right: auto;
+  margin-left: auto;
+}
+button {
+  font-family: 'Nosifer', cursive;
+  color: darkred;
+  background-image:radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
+}
+a:link{
+  color: darkred;
+}
+a:visited{
+  color: darkred;
+}
