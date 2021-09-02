@@ -24,10 +24,11 @@ function Player(name, level, lives, day, month, year){
 }
 
 
-const playerArray = Player([]);
+//const playerArray = Player([]);
+Player.playerArray = [];
 
 // We need to use stringified array from local storage. So, time being I am using Player.length in "for loop"
-for (let i =0; i< Player.length;i++){
+for (let i =0; i< Player.playerArray.length;i++){
   const liElem = document.createElement('li');
   liElem.textContent = "Player's info[i]";
   // We can add text with username, level cleared and how many killers released
@@ -47,7 +48,7 @@ function handleSubmit(event) {
   const year = parseInt(event.target.year.value);
   const player = new Player(name, level, lives, day, month, year);
   Player.playerArray.push(player);
-  console.log(playerArray);
+  console.log(Player.playerArray);
   //console.log(name, month, day ,year);
   const today = new Date();
   const todayYear = today.getFullYear();
