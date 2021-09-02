@@ -25,9 +25,10 @@ function removeHeart(){
   }
 }
 
-function Player(name, level){
+function Player(name, level, lives){
   this.name = name;
-  this.level;
+  this.level = level;
+  this.lives = lives;
 }
 
 Player.playerArray = [];
@@ -35,6 +36,19 @@ Player.playerArray = [];
 function storePlayers(){
   const stringPlayers = JSON.stringify(Player.playerArray);
   localStorage.setPlayers('players', storePlayers);
+}
+
+// Retrieves players from the local storage and parses and creates new player
+function getPlayers(){
+  const stringPlayers = localStorage.getItem('players');
+  if(stringPlayers){
+    const parsedPlayers = JSON.parse(stringPlayers);
+    for(let player of parsedPlayers){
+      const myPlayer = new Player(player.name, player.level);
+      Player.playerArray.push(myPlayer);
+    }
+  }
+  return Player.playerArray;
 }
 
 function viewPageButton(room){
