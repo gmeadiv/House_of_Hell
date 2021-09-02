@@ -7,6 +7,7 @@ body {
   background-color: rgb(15, 6, 6);;
 }
 
+/* COMIC PANELS AND EFFECTS*/
 .comic {
   display:flex;
   flex-wrap:wrap;
@@ -50,14 +51,14 @@ body {
 }
 
 .speech {
-  background-color:#fff;
+  background-color:rgba(179, 139, 7, 0.849);
   border:solid 2px #000;
   border-radius:12px;
   display:inline-block;
   margin:.5em;
   padding:.5em 1em;
   position:relative;
-  height: 100px;
+  height: 120px;
 }
 
 .speech:before {
@@ -76,8 +77,8 @@ body {
 
 .speech:after {
   border:solid 10px transparent;
-  border-left:solid 10px #fff;
-  border-top:solid 10px #fff;
+  border-left:solid 10px rgba(179, 139, 7, 0.849);
+  border-top:solid 10px rgba(179, 139, 7, 0.849);
   bottom:-19px;
   content:"";
   height:0;
@@ -111,12 +112,17 @@ body {
   margin-top: 100px;
   height: 100px;
 }
+ 
+/* background colours */
 
-img#kingGeorge {
-  width: 100%;
-  object-fit: cover;
-  position: relative;
-  opacity: .8;
+.panel:nth-child(1) {
+  background-image:radial-gradient(circle, darkred, rgb(0, 0, 0));
+  font-family: 'Bangers', cursive;
+}
+
+.panel {
+  background-image:radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
+  font-family: 'Bangers', cursive;
 }
 
 img#milk {
@@ -124,7 +130,7 @@ img#milk {
   object-fit: cover;
   position: relative;
   right: 30px;
-  bottom: -10px;
+  bottom: 5px;
 }
 
 img#shotgun {
@@ -142,18 +148,6 @@ img#real_coin {
 
 #headsOrTails {
   text-align: center
-}
- 
-/* background colours */
-
-.panel:nth-child(1) {
-  background-image:radial-gradient(circle, darkred, rgb(0, 0, 0));
-  font-family: 'Bangers', cursive;
-}
-
-.panel {
-  background-image:radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
-  font-family: 'Bangers', cursive;
 }
 
 button {

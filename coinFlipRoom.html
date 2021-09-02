@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Coin Flip</title>
     <link rel="stylesheet" href="./css/reset.css">
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./css/coinFlipRoom.css">
@@ -26,31 +27,21 @@
         </div>
       </div>
       <header>
-        <div id="lives">
-          <p>Lives 
-            <span id="firstHeart">&hearts;</span>
-            <span id="secondHeart">&hearts;</span>
-            <span id="thirdHeart">&hearts;</span>
-            <span id="fourthHeart">&hearts;</span>
-            <span id="fifthHeart">&hearts;</span>
-          </p>
-        </div>
       </header>
       <main>
         <article class="comic">
           <div class="panel">
-            <img id="kingGeorge" src="images/kinggeorge.png">
             <p class="text top-left">"What's the most you've ever lost ...</p>
             <p class="text bottom-right">... on a coin toss?"</p>
           </div>
           <div class="panel">
             <img id="milk" src="images/milk.png">
-            <p class="text top-left">the man behind the voice comes into view.</p>
+            <p class="text top-left">our first serial killer comes into view.</p>
             <p class="text bottom-right">He's sipping milk.</p>
           </div>
           <div class="panel">
             <img id="shotgun" src="images/shotgun.png">
-            <p class="text top-left">things don't look good.</p>
+            <p class="text top-left">things look grim.</p>
           </div>
           <div class="panel">
             <img id="real_coin" src="images/real_coin.jpg">
@@ -62,6 +53,7 @@
               to call it."</p>
           </div>
         <div class="panel">
+          <img id="" src="">
           <div id="headsOrTails" class="speech">
             <p>Call it, username:</p>
           <button type="button" id="heads">heads</button>
@@ -72,7 +64,13 @@
           <div class="panel">
             <p class="text top-left">player information:</p>
             <ul id="player_info">
-              <li>lives:</li>
+              <li>lives:
+                <span id="firstHeart">&hearts;</span>
+                <span id="secondHeart">&hearts;</span>
+                <span id="thirdHeart">&hearts;</span>
+                <span id="fourthHeart">&hearts;</span>
+                <span id="fifthHeart">&hearts;</span>
+              </li>
               <li>current level:</li>
               <li>restart level</li>
               <li>restart game</li>
@@ -89,9 +87,7 @@
           <button type="button" id="heads">Heads</button>
           <button type="button" id="tails">Tails</button>
         </div> -->
-        <form action="Room2.html"></form>
-          <button type="submit" id="toRoom2" class="hidden">Go to Room 2</button>
-        </form>
+        <button type="submit" id="toRoshambo"><a href="rpsRoom.html">roshambo</button></a>
       </main>
       <script src="./js/app.js"></script>
       <script src="./js/coinflip.js"></script>

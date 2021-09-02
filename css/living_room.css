@@ -105,6 +105,13 @@ img#kingGeorge {
   opacity: .8;
 }
 
+img#hauntedRoom {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  bottom: 200px;
+}
+
 /* background colours */
 
 .panel:nth-child(1) {

@@ -19,14 +19,14 @@ function headsOrTailsHandler(event){
   const tossResult = headsOrTails()
     if(event.target === headsElem){
       if(tossResult === 1){
-        console.log('you got it right')
+        alert('you got it right')
         headsOrTailsElem.removeEventListener('click', headsOrTailsHandler)
         viewPageButton(2);
         break;
       }
       else if(tossResult === 2)
       {
-        console.log('you got it wrong it was tails')
+        alert('you got it wrong it was tails')
         lives--;
         removeHeart();
         break;
@@ -46,5 +46,5 @@ function headsOrTailsHandler(event){
         break;
       }
     }
-    }
+  }
 }

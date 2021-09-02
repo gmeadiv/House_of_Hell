@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Riddler</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/riddleRoom.css">
     <link rel="stylesheet" href="./css/jsStyle.css">
@@ -25,15 +26,6 @@
         </div>
       </div>
       <header>
-         <div>
-          <p>Lives 
-            <span id="firstHeart">&hearts;</span>
-            <span id="secondHeart">&hearts;</span>
-            <span id="thirdHeart">&hearts;</span>
-            <span id="fourthHeart">&hearts;</span>
-            <span id="fifthHeart">&hearts;</span>
-          </p>
-        </div>
       </header>
       <main>
         <article class="comic">
@@ -43,29 +35,50 @@
           </div>
           <div class="panel">
             <img id="" src="">
-            <p class="text top-left">Still need ideas</p>
-            <p class="text bottom-right">for what text to put here.</p>
+            <p class="text top-left">The person who built it sold it. The person who bought it never used it.</p>
+            <form id="riddle1">
+              <label for="riddle1"></label><br>
+              <input type="text" id="answer1"><br>
+              <input type="submit" value="Submit">
+            </form>
+            <p class="text bottom-right">The person who used it never saw it. What is it?</p>
           </div>
           <div class="panel">
             <img id="" src="">
-            <p class="text top-left">not quite sure what the story for this room should be.</p>
+            <p class="text top-left">Which room do ghosts avoid?</p>
+            <form id="riddle2">
+              <label for="riddle2"></label><br>
+              <input type="text" id="answer2"><br>
+              <input type="submit" value="Submit">
+            </form>
           </div>
           <div class="panel">
             <img id="" src="">
-            <p class="text top-left">luckily all this text can be changed!</p>
-            <p class="text bottom-right">same with the boxes and colors and images and backgrounds</p>
+            <p class="text top-left">I don't have eyes, but once I did see.</p>
+            <form id="riddle3">
+              <label for="riddle3"></label><br>
+              <input type="text" id="answer3"><br>
+              <input type="submit" value="Submit">
+            </form>
+            <p class="text bottom-right">Once I had thoughts, but now I'm white and empty.</p>
           </div>
-          <div class="panel"></div>
+          <div class="panel">
+            <p class="text top-left">player information:</p>
+            <ul id="player_info">
+              <li>lives:
+                <span id="firstHeart">&hearts;</span>
+                <span id="secondHeart">&hearts;</span>
+                <span id="thirdHeart">&hearts;</span>
+                <span id="fourthHeart">&hearts;</span>
+                <span id="fifthHeart">&hearts;</span>
+              </li>
+              <li>current level:</li>
+              <li>restart level</li>
+              <li>restart game</li>
+              <li>save game</li>
+            </ul>
+          </div>
         </article>
-         <form>
-          <label for="riddle1">The person who built it sold it. The person who bought it never used it. The person who used it never saw it. What is it?</label><br>
-          <input type="text" id="answer1"><br>
-          <label for="riddle2">What room do ghosts avoid?</label><br>
-          <input type="text" id="answer2"><br>
-          <label for="riddle3">I don't have eyes, but once I did see. Once I had thoughts, but now I'm white and empty.</label><br>
-          <input type="text" id="answer3"><br>
-          <input type="submit" value="Submit">
-        </form>
         <form action="victory.html"></form>
           <button type="submit" id="victory" class="hidden">You win!</button>
         </form>
