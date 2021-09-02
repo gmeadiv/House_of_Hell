@@ -42,8 +42,4 @@ function headsOrTailsHandler(event){
       }
     }
   }
-  if(lives === 0){
-    headsOrTailsElem.removeEventListener('click', headsOrTailsHandler)
-    youDied();
-  }
 }
