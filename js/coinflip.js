@@ -12,7 +12,7 @@ headsOrTailsElem.addEventListener('click', headsOrTailsHandler);
 function headsOrTailsHandler(event){
   if(lives === 0){
     headsOrTailsElem.removeEventListener('click', headsOrTailsHandler)
-    alert('you died')
+    youDied();
     //insert a link to jump to the game over you lose page
   }
   while(lives > 0){

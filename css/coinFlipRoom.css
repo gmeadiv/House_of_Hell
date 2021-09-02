@@ -166,6 +166,8 @@ button {
   font-family: 'Nosifer', cursive;
   font-size: 10%;
 }
-
+#lives{
+  background-color: white;;
+}
 li#player_info {
 }

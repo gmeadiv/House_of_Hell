@@ -50,3 +50,11 @@ function viewPageButton(room){
     victoryButtonElem.classList.toggle('hidden');
   }
 }
+function youDied(){
+  const youDiedElem = document.getElementById('youDied')
+  {
+    if(lives === 0){
+      youDiedElem.classList.toggle('hidden')
+    }
+  }
+}
