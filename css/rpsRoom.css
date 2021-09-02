@@ -138,8 +138,10 @@ img#bloodyRock {
 
 img#sheriff {
   width: 130%;
+  height: 100%;
   object-fit: cover;
-  object-position: left;
+  position: relative;
+  right: 10px;
 }
 
 img#bloodyScissors {
