@@ -3,12 +3,17 @@ html, body {
   padding:0;
 }
 
+.hidden{
+  display: none;
+}
+
 #bloodyBackground {
   position: fixed;
   top: 0;
   left: 0;
   min-width: 100%;
   min-height: 100%;
+  z-index: -1;
 }
 
 /* COMIC PANELS AND EFFECTS*/
@@ -172,6 +177,7 @@ button {
   color: darkred;
   background-image:radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
   border-radius: 5px;
+  z-index: 1;
 }
 
 #player_info {

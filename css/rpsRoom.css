@@ -3,12 +3,17 @@ html, body {
   padding:0;
 }
 
+.hidden{
+  display: none;
+}
+
 #bloodyBackground {
   position: fixed;
   top: 0;
   left: 0;
   min-width: 100%;
   min-height: 100%;
+  z-index: -1;
 }
 
 .comic {
@@ -123,7 +128,7 @@ img#zackTwo {
   width: 50%;
 }
 
-img#rock {
+img#bloodyRock {
   width: 110%;
   object-fit: cover;
   position: relative;
@@ -137,7 +142,7 @@ img#sheriff {
   object-position: left;
 }
 
-img#scissors {
+img#bloodyScissors {
   display: flex;
   width: 100%;
   object-fit: cover;

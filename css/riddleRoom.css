@@ -4,12 +4,17 @@ html, body {
   background-color: black;
 }
 
+.hidden{
+  display: none;
+}
+
 #bloodyBackground {
   position: fixed;
   top: 0;
   left: 0;
   min-width: 100%;
   min-height: 100%;
+  z-index: -1;
 }
 
 .comic {
@@ -134,6 +139,7 @@ img#anthony {
 img#coffin {
   width: 100%;
   object-fit: cover;
+  z-index: 0;
 }
 
 img#skull {
@@ -141,11 +147,13 @@ img#skull {
   object-fit: cover;
   position: relative;
   bottom: 40px;
+  z-index: 0;
 }
 
 form#riddle1 {
   font-family: 'Nosifer', cursive;
   color: darkred;
+  z-index: 1;
 }
 
 button {
@@ -169,10 +177,3 @@ ul#player_info {
   position: relative;
   bottom: -30px;
 }
-button {
-  font-family: 'Nosifer', cursive;
-  color: darkred;
-  background-image:radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
-}
-li {
-  margin: 10px;
