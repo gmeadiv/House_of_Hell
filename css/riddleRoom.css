@@ -3,6 +3,14 @@ html, body {
   padding:0;
 }
 
+#bloodyBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .comic {
   display:flex;
   flex-wrap:wrap;
@@ -68,7 +76,6 @@ html, body {
   width:0;
 }
 
-
 .speech:after {
   border:solid 10px transparent;
   border-left:solid 10px #fff;
@@ -96,33 +103,16 @@ html, body {
   justify-content: flex-end;
 }
 .panel:nth-child(5) {
-  flex-basis: 200px;
+  min-width: 250px;
+  max-width: 300px;
 }
 
-img#milk {
-  width: 150%;
-  object-fit: cover;
-  position: relative;
-  right: 120px;
-}
-
-img#bed {
-  width: 150%;
-  object-fit: cover;
-  position: relative;
-  top: 10px;
-}
-
-img#real_coin {
-  display: flex;
-  align-self: flex-end;
-}
 
 #headsOrTails {
   text-align: center
 }
  
-/* background colours */
+/* background colors */
 
 .panel:nth-child(1) {
   background-image:radial-gradient(circle, darkred, rgb(0, 0, 0));
@@ -134,22 +124,51 @@ img#real_coin {
   font-family: 'Bangers', cursive;
 }
 
+img#anthony {
+  width: 95%;
+  object-fit: cover;
+  object-position: center;
+}
+
+img#coffin {
+  width: 100%;
+  object-fit: cover;
+}
+
+img#skull {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  bottom: 40px;
+}
+
+form#riddle1 {
+  font-family: 'Nosifer', cursive;
+  color: darkred;
+}
+
 button {
   font-family: 'Nosifer', cursive;
   color: darkred;
   background-image:radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
+  border-radius: 5px;
 }
 
 #player_info {
   display: flex;
   flex-direction: column;
   position: relative;
-  right: -10px;
-  margin-top: 45px;
+  right: -20px;
   color: darkred;
   font-family: 'Nosifer', cursive;
-  font-size: 10%;
+  font-size: 90%;
 }
 
-li#player_info {
+ul#player_info {
+  position: relative;
+  bottom: -30px;
+}
+
+li {
+  margin: 10px;
 }
