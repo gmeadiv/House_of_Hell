@@ -3,11 +3,9 @@ html, body {
   padding:0;
   background-color: transparent;
 }
-
 .hidden{
   display: none;
 }
-
 #bloodyBackground {
   position: fixed;
   top: 0;

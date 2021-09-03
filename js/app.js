@@ -74,11 +74,3 @@ function victory(){
   const victoryElem = document.getElementById('victory')
   victoryElem.classList.toggle('hidden')
 }
-
-// congratsElem = document.getElementById('congrats');
-// function saraHandler(event){
-//   console.log(event.target)
-//   saraElem = document.getElementById('sara');
-//   saraElem.classList.toggle('hidden');
-// }
-// congratsElem.addEventListener('submit', saraHandler);
