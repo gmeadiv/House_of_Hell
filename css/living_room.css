@@ -138,8 +138,12 @@ img#hauntedRoom {
 button {
   font-family: 'Nosifer', cursive;
   color: darkred;
-  background-image:radial-gradient(circle, rgb(172, 177, 179), rgb(8, 19, 22));
+  background-image:radial-gradient(circle, rgb(172, 177, 179), rgb(67, 68, 68));
   border-radius: 5px;
+}
+
+a {
+  color: darkred;
 }
 
 #player_info {
