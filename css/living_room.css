@@ -44,6 +44,8 @@ html, body {
 }
 
 .top-left {
+  display: flex;
+  flex-direction: row;
   left:-6px;
   position:absolute;
   top:-2px;

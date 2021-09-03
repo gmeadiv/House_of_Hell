@@ -19,6 +19,8 @@
         font-size: 80%;
         margin-left: 10px;
         z-index: 1;
+        position: relative;
+        bottom: -20px;
       }
       input[type=text] {
         background-color: rgba(179, 139, 7, 0.849);
@@ -27,6 +29,8 @@
         font-family: 'Bangers', cursive;
         margin-left: 10px;
         z-index: 1;
+        position: relative;
+        bottom: -20px;
       }
     </style>
   </head>
@@ -39,7 +43,7 @@
             <p>Died</p>
           </div>
           <div id="menu">
-            <button type="submit">Retry Level</button>
+            <button type="submit"><a href="riddleRoom.html">Retry Level</a></button>
             <button type="submit"><a href="index.html">Homepage</a></button>
             <button type="button"><a href="aboutUs.html">About Us</a></button>
           </div>
@@ -107,6 +111,7 @@
             <p class="text bottom-right">Once I had thoughts, but now I'm white and empty.</p>
           </div>
           <div class="panel">
+            <p class="text top-left">Put answers here:</p>
             <form id ="form1"> 
               <div id="riddle1">
                 <label for="riddleone"></label><br>
@@ -135,9 +140,8 @@
                 <span id="fourthHeart">&hearts;</span>
                 <span id="fifthHeart">&hearts;</span>
               </li>
-              <li>current level:</li>
-              <li>restart level</li>
-              <li>restart game</li>
+              <li><a href="riddleRoom.html">Restart Level</a></li>
+              <li><a href="living_room.html">Restart Game</a></li>
               <li>save game</li>
             </ul>
           </div>
