@@ -3,6 +3,9 @@ const headsOrTailsElem = document.getElementById('headsOrTails');
 const headsElem = document.getElementById('heads');
 const tailsElem = document.getElementById('tails');
 
+getUserName();
+// console.log(getUserName());
+getBirthYear();
 
 function headsOrTails(){
   return Math.floor(Math.random() * (3 - 1) + 1);
@@ -47,3 +50,6 @@ function headsOrTailsHandler(event){
     youDied();
   }
 }
+
+getPlayers();
+console.log(getPlayers.name);

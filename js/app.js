@@ -1,7 +1,6 @@
 'use strict'
 let lives = 5;
 
-
 function removeHeart(){
   const firstHeartElem = document.getElementById('firstHeart')
   const secondHeartElem = document.getElementById('secondHeart')
@@ -36,23 +35,23 @@ function removeHeart(){
 
 // Player.playerArray = [];
 
-function storePlayers(){
-  const stringPlayers = JSON.stringify(Player.playerArray);
-  localStorage.setPlayers('players', storePlayers);
-}
+// function storePlayers(){
+//   const stringPlayers = JSON.stringify(Player.playerArray);
+//   localStorage.setPlayers('players', storePlayers);
+// }
 
-// Retrieves players from the local storage and parses and creates new player
-function getPlayers(){
-  const stringPlayers = localStorage.getItem('players');
-  if(stringPlayers){
-    const parsedPlayers = JSON.parse(stringPlayers);
-    for(let player of parsedPlayers){
-      const myPlayer = new Player(player.name, player.level);
-      Player.playerArray.push(myPlayer);
-    }
-  }
-  return Player.playerArray;
-}
+// // Retrieves players from the local storage and parses and creates new player
+// function getPlayers(){
+//   const stringPlayers = localStorage.getItem('players');
+//   if(stringPlayers){
+//     const parsedPlayers = JSON.parse(stringPlayers);
+//     for(let player of parsedPlayers){
+//       const myPlayer = new Player(player.name, player.level, player.lives, player.day, player.month, player.year);
+//       Player.playerArray.push(myPlayer);
+//     }
+//   }
+//   return Player.playerArray;
+// }
 
 function viewPageButton(room){
   const room2ButtonElem = document.getElementById('toRoshambo');

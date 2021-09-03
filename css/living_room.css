@@ -44,6 +44,8 @@ html, body {
 }
 
 .top-left {
+  display: flex;
+  flex-direction: row;
   left:-6px;
   position:absolute;
   top:-2px;
@@ -101,13 +103,10 @@ html, body {
   flex-basis: 200px;
 }
 .panel:nth-child(3) {
-  flex-basis: 700px;
+  flex-basis: 500px;
 }
 .panel:nth-child(4) {
-  flex-basis: 300px;
-}
-.panel:nth-child(5) {
-  flex-basis: 300px;
+  flex-basis: 150px;
 }
 
 img#kingGeorge {
@@ -121,7 +120,7 @@ img#hauntedRoom {
   width: 100%;
   object-fit: cover;
   position: relative;
-  bottom: 200px;
+  bottom: 100px;
 }
 
 /* background colors */
